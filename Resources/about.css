@@ -1,0 +1,214 @@
+body {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: sans-serif;
+}
+/* start navbar */
+
+.navbar {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 3.875rem;
+  background-color: #000000;
+}
+
+.navbar-nav ul {
+    width: 75%;
+    margin-right: 3.4375rem;
+  list-style: none;
+  text-decoration: none;
+    font-color: #ffffff;
+}
+.logo{
+  top: 20px;
+  margin-left: 3.6875rem;
+  height: 50px;
+  width: 150px;
+  margin-right: auto;
+  float: left;
+}
+.navbar-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+.navbar-nav li {
+  display: inline;
+  padding: 15px;
+}
+.current a {
+  ;
+  text-decoration: none;
+}
+/*Container - Main */
+.container-main {
+  display: flex;
+  border-bottom: 10px solid #794ae2;
+}
+.container-main img {
+  margin-right: 50%;
+  height: auto;
+  width: auto;
+}
+.info {
+  margin-top: 10rem;
+  align-content: flex-end;
+  margin-right: 5%;
+}
+.info h1, p {
+  align-content: center;
+}
+.info h1 {
+  color: #794ae2;
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.info p {
+  color: #666666;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height 1.5;
+}
+/*SECOND CONTAINER*/
+.container-two {
+  display: flex;
+  background-color: #f2f2f2;
+}
+.image-two {
+  margin-left: 19%;
+  margin-top: 8rem;
+  margin-right: 5rem;
+  width: 100px;
+  align-items: flex-start;
+}
+.info-two {
+  align-items: flex-end;
+  margin-top: 4rem;
+}
+.info-two h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #794ae2;
+  width: 35rem;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+
+}
+.info-two img {
+  width: 15%;
+  display: inline;
+}
+.info-two p {
+  margin-left: 19%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666666;
+  width: 80%;
+  text-align: center;
+}
+.container-three {
+  display: flex;
+}
+.image-three {
+  align-items: flex-end;
+  margin-right: 19%;
+  margin-left: 5rem;
+  margin-top: 8rem;
+}
+.image-four {
+  align-items: flex-end;
+  margin-right: 19%;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+/*MAP SECTION*/
+.map {
+  background-image: url('/Users/MikeyThomas/Desktop/Projects/Capstone PYT Dance Studio/Resources/map.jpg');
+  height: 31.25rem;
+  display: flex;
+}
+.map-info {
+  padding: 3rem;
+  background-color: rgba(121, 42, 226, 0.8);
+  align-self: baseline;
+  margin-left: auto;
+  margin-top: auto;
+  width: 15rem;
+}
+
+/*begin FOOTER */
+.footer {
+  width: 100%;
+  height: 18.125rem;
+  background-image: url('/Users/MikeyThomas/Desktop/Projects/Capstone PYT Dance Studio/Resources/party-photo.png');
+}
+.footer div {
+  display: inline-block;
+}
+.footer-bar {
+  display: flex;
+  display: inline-block;
+  max-height: 5rem;
+  width: 100%;
+}
+.social {
+  flex-wrap: nowrap;
+  margin-left: 25%;
+  width: 9.375rem;
+  position: relative;
+}
+.social i {
+  align-items: center;
+  padding: 0px 10px;
+}
+.contact {
+  margin: auto;
+  float: right;
+  margin-bottom: 10px;
+  width: 300px;
+
+}
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer-end {
+  width: 100%;
+  height: 15rem;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.footer-end p {
+  text-align: center;
+  line-height: 2;
+  width: 700px;
+  margin: auto;
+  font-size: .875rem;
+  letter-spacing: 0.7px;
+  margin-top: 5rem;
+}
+/*mobile transitions */
+@media only screen and (max-width: 768px) {
+  .container-main, .container-two, .container-three {display: flex; flex-wrap: wrap;}
+  .info {margin-top: 10px;}
+  .container-main img {clip: rect(0px, 0px, 0px, 400px);}
+  .info h1 {margin-top: 15px; margin-bottom: 5px; font-size: 1.25rem; font-weight: bold; color: #794ae2;}
+  .info p {font-size: 1rem; line-height: 1.6; align-items: center;}
+  .info-two {margin-top: 1.875rem;}
+  .image-two {margin-top: 1.875rem; margin-left: auto; margin-right: auto;}
+  .info-two p {margin-left: 10%; font-size: 1rem; line-height: 1.6;}
+  .image-three {margin: 0px 0px; display: inline;}
+}
